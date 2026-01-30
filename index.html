@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio | Dodyrizard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-info" href="#beranda">dodyrizard</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#beranda">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tentang">Tentang Saya</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#keahlian">Keahlian</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#project">Project</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tools">Tools</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#kontak">Kontak Saya</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section id="beranda" class="hero d-flex align-items-center justify-content-between gap-4 py-5">
+            <div class="hero-text">
+                <p class="mb-1">Halo semua 👋 saya</p>
+                <h1 class="display-5 fw-bold typewriter">
+                    <span id="typewriter-text" class="typing-active">Dodyrizard Prasetyo</span>
+                </h1>
+                <h6 class="text-info">Mahasiswa | Universitas Esa Unggul</h6>
+                <blockquote class="mt-3 fst-italic text-secondary">
+                    "Setiap bug adalah kesempatan untuk belajar dan menjadi lebih baik."
+                </blockquote>
+                <div class="mt-4">
+                    <a href="New_CV.pdf" class="btn btn-cv me-3" download><i class="fas fa-download me-2"></i>Download CV</a>
+                    <a href="https://www.instagram.com/dodyrzd" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/Dodyrizard" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="hero-img">
+                <img src="profile.jpg" alt="Foto Profil" class="profile-img">
+            </div>
+        </section>
+
+        <section id="tentang" class="about py-5">
+            <h2 class="mb-4">Tentang Saya</h2>
+            <p class="lead">Saya adalah Mahasiswa Esa Unggul Jurusan Teknik Informatika dan saya berasal dari Jakarta, saya sedang mempelajari pengembangan web dan juga aplikasi. Saya terbiasa membuat aplikasi maupun web menggunakan PHP, JavaScript, HTML, CSS, Java dan MySQL. Saat ini saya fokus mengembangkan proyek-proyek kecil untuk meningkatkan skill saya.</p>
+            <p>Kontak: <a href="mailto:dodyrizard.p90@gmail.com" class="text-info">dodyrizard.p90@gmail.com</a></p>
+        </section>
+
+        <section id="keahlian" class="skills py-5">
+            <h2 class="mb-4">Keahlian</h2>
+            <div class="row text-center justify-content-center">
+                <div class="col-6 col-md-4 mb-4"><div class="skill-card p-4"><i class="fab fa-java fa-3x text-info mb-3"></i><h5>Java</h5></div></div>
+                <div class="col-6 col-md-4 mb-4"><div class="skill-card p-4"><i class="fab fa-html5 fa-3x text-info mb-3"></i><h5>HTML & CSS</h5></div></div>
+                <div class="col-6 col-md-4 mb-4"><div class="skill-card p-4"><i class="fab fa-php fa-3x text-info mb-3"></i><h5>PHP</h5></div></div>
+                <div class="col-6 col-md-4 mb-4"><div class="skill-card p-4"><i class="fab fa-js fa-3x text-info mb-3"></i><h5>JavaScript</h5></div></div>
+                <div class="col-6 col-md-4 mb-4"><div class="skill-card p-4"><i class="fas fa-database fa-3x text-info mb-3"></i><h5>MySQL</h5></div></div>
+            </div>
+        </section>
+
+        <section id="project" class="py-5">
+            <div class="container">
+                <h2 class="mb-4" style="color:var(--accent); border-left:4px solid var(--accent); padding-left:10px;">Project</h2>
+        
+                <div class="row"> <div class="col-md-6 mb-4">
+                        <div class="card project-card h-100">
+                            <img src="online_shop.jpg" class="card-img-top" alt="Project Online Shop">
+                            <div class="card-body">
+                                <h5 class="card-title text-info">E-Commerce Online Shop</h5>
+                                <p class="card-text">
+                                Website ini merupakan <strong>Project Tugas Akhir</strong> yang saya kembangkan untuk mensimulasikan platform belanja online. Menggunakan Database Statis (Array/Object) dengan PHP. Fitur utama berfokus pada sistem <strong>Sorting Produk</strong> yang efisien:
+                                </p>
+                                <ul class="text-secondary small">
+                                    <li class="text-white">Sorting berdasarkan Harga (Termurah & Termahal).</li>
+                                    <li class="text-white">Sorting berdasarkan Rating (Tertinggi & Terendah).</li>
+                                    <li class="text-white">Sorting berdasarkan Jumlah Produk Terjual.</li>
+                                </ul>
+                                <p class="card-text small text-white">Tools: PHP, HTML, CSS, Laragon, JavaScript.</p>
+                                <div class="mt-3">
+                                    <a href="http://dodyrizard.infinityfreeapp.com" target="_blank" class="btn btn-sm btn-cv">Kunjungi Web</a>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <div class="card project-card h-100">
+                        <video class="card-img-top" controls>
+                        <source src="Dokumentasi_findkey_ransomware.mp4" type="video/mp4">
+                        </video>
+                        <div class="card-body">
+                            <h5 class="card-title text-info">Ransomware Key Discovery: Memory Forensics</h5>
+                            <p class="card-text">
+                                Project simulasi keamanan siber yang berfokus pada analisis serangan ransomware. 
+                                Menggunakan teknik <strong>Forensik Memori Dump</strong> untuk melacak dan menemukan kunci enkripsi (decryption key) di dalam RAM.
+                            </p>
+                            <ul class="text-secondary small">
+                                <li class="text-white">Melakukan simulasi serangan pada Virtual Machine (Windows 7).</li>
+                                <li class="text-white">Ekstraksi Memori Dump menggunakan tool forensik.</li>
+                                <li class="text-white">Analisis artefak memori untuk mencari string kunci dekripsi.</li>
+                            </ul>
+                            <p class="card-text small text-white">Tools: VirtualBox, FIle ISO Kali Linux, FIle ISO Windows 7.</p>
+                            <div class="mt-3">
+                                <span class="badge bg-danger">Cybersecurity Project</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div> </div>
+        </section>
+
+        <section id="tools" class="tools py-5">
+            <h2 class="mb-4">Tools yang Saya Gunakan</h2>
+            <div class="row justify-content-center">
+                <div class="col-6 col-md-4 col-lg-2 mb-4"><div class="tool-card p-4"><i class="fas fa-code fa-3x text-info mb-3"></i><h6>VS Code</h6></div></div>
+                <div class="col-6 col-md-4 col-lg-2 mb-4"><div class="tool-card p-4"><i class="fas fa-server fa-3x text-info mb-3"></i><h6>Laragon</h6></div></div>
+                <div class="col-6 col-md-4 col-lg-2 mb-4"><div class="tool-card p-4"><i class="fab fa-github fa-3x text-info mb-3"></i><h6>GitHub</h6></div></div>
+                <div class="col-6 col-md-4 col-lg-2 mb-4"><div class="tool-card p-4"><i class="fab fa-figma fa-3x text-info mb-3"></i><h6>Figma</h6></div></div>
+            </div>
+        </section>
+
+        <section id="kontak" class="contact-section py-5">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="mb-4" style="color: var(--accent); display: inline-block;">
+                        Kontak Saya
+                    </h2>
+                    <p class="text-white">Tertarik untuk berkolaborasi? Silakan hubungi saya di bawah ini 👇</p>
+                </div>
+
+                <form id="contactForm" class="contact-form mx-auto" style="max-width: 600px;">
+                    <div class="mb-3">
+                        <input type="text" id="nama" class="form-control custom-input" placeholder="Nama Lengkap" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" id="email" class="form-control custom-input" placeholder="Alamat Email" required>
+                    </div>
+                    <div class="mb-3">
+                        <textarea id="pesan" class="form-control custom-input" rows="4" placeholder="Tulis pesan kamu..." required></textarea>
+                    </div>
+                    <div class="text-center mt-4">
+                        <button type="button" onclick="kirimKeWA()" class="btn btn-cv px-5">
+                            <i class="fab fa-whatsapp me-2"></i>Kirim via WhatsApp
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="mt-5 py-4 text-center text-white border-top border-secondary">
+        <p>© 2026 Dodyrizard Prasetyo</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Animasi Sticky Navbar
+        window.onscroll = () => {
+            const nav = document.querySelector(".custom-navbar");
+            if (window.scrollY > 50) nav.classList.add("scrolled");
+            else nav.classList.remove("scrolled");
+        };
+
+        // Animasi Typewriter
+        window.addEventListener('DOMContentLoaded', () => {
+            const textElement = document.getElementById('typewriter-text');
+            setTimeout(() => {
+                textElement.classList.remove('typing-active');
+                textElement.style.width = '100%';
+                textElement.style.borderRight = 'none';
+            }, 3500); 
+        });
+    </script>
+
+    <script>
+    function kirimKeWA() {
+        const nama = document.getElementById('nama').value;
+        const email = document.getElementById('email').value;
+        const pesan = document.getElementById('pesan').value;
+    
+        const nomorWA = "62895326097742"; 
+
+        // Validasi sederhana
+        if (nama === "" || email === "" || pesan === "") {
+            alert("Mohon isi semua kolom terlebih dahulu!");
+            return;
+        }   
+
+        // Menyusun teks pesan (menggunakan %0A untuk baris baru)
+        const teksPesan =   `*Halo Dody!*%0A` +
+                            `Ada pesan baru dari Portofolio:%0A%0A` +
+                            `*Nama:* ${nama}%0A` +
+                            `*Email:* ${email}%0A` +
+                            `*Pesan:* ${pesan}`;
+
+        // Membuka URL WhatsApp API
+        const url = `https://api.whatsapp.com/send?phone=${nomorWA}&text=${teksPesan}`;
+        window.open(url, '_blank');
+    }
+    </script>
+</body>
+</html>

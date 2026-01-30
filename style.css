@@ -1,0 +1,96 @@
+html { scroll-behavior: smooth; }
+:root {
+    --bg: #071029;
+    --card: #0f172a;
+    --muted: #94a3b8;
+    --accent: #38bdf8;
+}
+
+body {
+    background: var(--bg);
+    color: #e6eef8;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+.custom-navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #0b1220;
+    transition: 0.3s;
+}
+
+.scrolled { background: #0b1220ee; box-shadow: 0 4px 12px rgba(0,0,0,0.4); }
+
+.hero { min-height: 80vh; }
+.hero-text { max-width: 720px; }
+.profile-img {
+    width: 320px;
+    border-radius: 20px;
+    border: 4px solid var(--accent);
+    box-shadow: 0 10px 30px rgba(56, 189, 248, 0.2);
+}
+
+.btn-cv {
+    background: var(--accent);
+    color: #071029;
+    border-radius: 30px;
+    padding: 10px 22px;
+    font-weight: 600;
+    border: none;
+}
+
+.social-link { color: var(--accent); font-size: 1.8rem; margin-left: 10px; transition: 0.3s; }
+.social-link:hover { transform: scale(1.2); color: white; }
+
+.about, .skills, .tools { background: var(--card); padding: 60px 20px; border-radius: 15px; margin-bottom: 30px; }
+.about h2, .skills h2, .tools h2 { border-left: 4px solid var(--accent); padding-left: 15px; color: var(--accent); }
+
+.skill-card, .tool-card { background: rgba(255,255,255,0.05); border-radius: 15px; transition: 0.3s; }
+.skill-card:hover, .tool-card:hover { transform: translateY(-10px); background: rgba(56,189,248,0.1); }
+
+.card { background: var(--card); border: none; color: white; }
+
+/* TYPEWRITER SYSTEM */
+.typewriter { display: flex; justify-content: flex-start; }
+.typewriter span {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    letter-spacing: 2px;
+    width: 0;
+    border-right: 3px solid transparent;
+}
+.typewriter span.typing-active {
+    border-right: 3px solid var(--accent);
+    animation: typing 3.5s steps(20, end) forwards, blink 0.75s step-end infinite;
+}
+@keyframes typing { from { width: 0 } to { width: 100% } }
+@keyframes blink { from, to { border-color: transparent } 50% { border-color: var(--accent) } }
+
+@media (max-width: 992px) {
+    .hero { flex-direction: column; text-align: center; }
+    .typewriter { justify-content: center; }
+}
+
+/* Style untuk Form Kontak agar Rapi */
+.custom-input {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid rgba(56, 189, 248, 0.2) !important;
+    color: white !important;
+    padding: 12px 15px;
+    border-radius: 8px;
+}
+
+.custom-input:focus {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    border-color: var(--accent) !important;
+    box-shadow: 0 0 8px rgba(56, 189, 248, 0.3);
+    color: white !important;
+}
+
+/* Mengubah warna placeholder agar lebih terlihat */
+.custom-input::placeholder {
+    color: rgba(255, 255, 255, 0.5) !important;
+}
